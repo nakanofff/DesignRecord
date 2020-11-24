@@ -1,0 +1,30 @@
+@charset "UTF-8";
+header{
+  position: fixed;
+  z-index: 60;
+  width: 100vw;
+  height: 100vh;
+  padding: 1%;
+}
+#DR_logo{
+  margin: 0;
+}
+#DR_logo img{
+  width: 9vw;
+  height: auto;
+  object-fit: cover;
+}
+#menu_button{
+  position: absolute;
+  z-index: 60;
+  left: 0;
+  top: 50%;
+}
+#menu_button p{
+  color: #000000;
+  font-size: 1.4vw;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  transform: rotate(90deg);
+  margin: 0;
+}

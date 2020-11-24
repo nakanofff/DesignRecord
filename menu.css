@@ -1,0 +1,152 @@
+@charset "UTF-8";
+@keyframes text_anime {
+  0%{
+    color: #fd3a69;
+  }
+  20%{
+    color: #fd8c04;
+  }
+  40%{
+    color: #fcf876;
+  }
+  60%{
+    color: #28df99;
+  }
+  80%{
+    color: #1f6f8b;
+  }
+  100%{
+    color: #e6739f;
+  }
+
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+#menu{
+  width: 100vw;
+  height: 100vh;
+  background-color: #2b2b28;
+  position: fixed;
+  z-index: 70;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  transition: 1s;
+  transform: translateX(-100%);
+}
+.close_menu{
+  transform: translateX(0) !important;
+}
+#menu_wrap{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#menu_wrap nav{
+
+}
+.page_wrap{
+  list-style: none;
+}
+.pege_wrap li{
+  text-decoration: none;
+
+}
+.page_wrap li a{
+  list-style: none;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 4vw;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+}
+.port a{
+  font-size: 2vw !important;
+  animation: text_anime 3s infinite !important;
+}
+.sns_wrap{
+  display: flex;
+  justify-content: space-around;
+
+}
+.sns_wrap button{
+  width: 70px;
+  height: 70px;
+  background-color: #ffffff;
+  border: none;
+}
+.menu_img{
+  margin: 0;
+}
+.menu_img img{
+  width: 45vw;
+  height: 80vh;
+  object-fit: cover;
+}
+#close_button{
+  position: absolute;
+  z-index: 80;
+  left: 0;
+  top: 50%;
+}
+#close_button p{
+  color: #ffffff;
+  font-size: 1.4vw;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  transform: rotate(90deg);
+  margin: 0;
+}
+@media screen and (max-width: 420px){
+  #menu_wrap{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .page_wrap{
+  }
+  .page_wrap li a{
+    list-style: none;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 13vw;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+  }
+  .port a{
+    font-size: 10vw !important;
+  }
+  .sns_wrap{
+    display: flex;
+    justify-content: space-around;
+
+  }
+  .sns_wrap button{
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border: none;
+  }
+  .menu_img img{
+    width: 80vw;
+    height: 45vh;
+    object-fit: cover;
+  }
+  #close_button p{
+    color: #ffffff;
+    font-size: 4vw;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    transform: rotate(90deg);
+    margin: 0;
+  }
+}
