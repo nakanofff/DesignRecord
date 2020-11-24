@@ -1,0 +1,115 @@
+@charset "UTF-8";
+@keyframes button_anime {
+  0%{
+    background-color: #fd3a69;
+  }
+  20%{
+    background-color: #fd8c04;
+  }
+  40%{
+    background-color: #fcf876;
+  }
+  60%{
+    background-color: #28df99;
+  }
+  80%{
+    background-color: #1f6f8b;
+  }
+  100%{
+    background-color: #e6739f;
+  }
+
+}
+body{
+  background-image: : linear-gradient(left, #ffffff, ##000000)!important;
+}
+#multiscroll{
+  width: 100vw;
+  height: 100vh;
+}
+.ms-left{
+
+}
+.ms-left-section:first-child{
+  display: flex !important;
+  justify-content: center !important;
+  align-items: flex-end !important;
+}
+
+.ms-left-section img{
+  width: 50vw;
+  height: 100vh;
+  object-fit: cover;
+}
+.ms-right-section{
+  margin-left: 8vw;
+}
+.products_title{
+
+}
+.products_title h3{
+  color: #000000;
+  font-size: 2.8vw;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  margin: 0;
+}
+.products_title p{
+  color: #000000;
+  font-size: 1.7vw;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  margin-top: 2px;
+}
+.products_design{
+
+}
+.products_design h4{
+  color: #000000;
+  font-size: 1.7vw;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 100;
+  margin: 0;
+}
+.products_design p{
+  color: #000000;
+  font-size: 1vw;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 100;
+  margin-top: 2px;
+}
+.products_material{
+
+}
+.products_material h4{
+  color: #000000;
+  font-size: 1.5vw;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 100;
+  margin: 0;
+}
+.products_material p{
+  color: #000000;
+  font-size: 1vw;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 100;
+  margin-top: 2px;
+}
+.buy_button{
+  background-color: #ffffff;
+  border-radius: none;
+  border: 0.3px solid #000000;
+  color: #000000;
+  font-size: 1.6vw;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 100;
+  margin-top: 6vh;
+  width: 30vw;
+  height: 8vh;
+  text-align: left;
+  transition: 2s;
+}
+.buy_button:hover{
+  animation: button_anime 3s infinite !important;
+  color: #ffffff;
+}

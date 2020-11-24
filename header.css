@@ -2,7 +2,6 @@
 header{
   position: fixed;
   z-index: 60;
-  width: 100vw;
   height: 100vh;
   padding: 1%;
 }
@@ -10,7 +9,7 @@ header{
   margin: 0;
 }
 #DR_logo img{
-  width: 9vw;
+  width: 15vw;
   height: auto;
   object-fit: cover;
 }
@@ -27,4 +26,22 @@ header{
   font-weight: 100;
   transform: rotate(90deg);
   margin: 0;
+}
+.header_buy_button{
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 25vw;
+  border: 0.3px solid #000000;
+  color: #000000;
+  font-size: 1.5w;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 100;
+  background-color: #ffffff;
+  padding: 8px;
+  transition: 1s;
+}
+.header_buy_button:hover{
+  background-color: #000000;
+  color: #ffffff;
 }
