@@ -1,0 +1,66 @@
+@charset "UTF-8";
+#multiscroll{
+  width: 100vw;
+  height: 100vh;
+}
+.ms-left{
+
+}
+.ms-left-section{
+
+}
+.ms-left-section img{
+  width: 50vw;
+  height: 100vh;
+  object-fit: cover;
+}
+.ms-right-section{
+  margin-left: 8vw;
+}
+.about_title{
+
+}
+.about_title h3{
+  color: #000000;
+  font-size: 2.8vw;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 100;
+  margin: 0;
+}
+.about_text{
+
+}
+.about_text p{
+  color: #000000;
+  font-size: 1vw;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 100;
+  margin-top: 2px;
+}
+.about_button{
+
+}
+.about_button button{
+  width: 32vw;
+  height: 6vh;
+  border-radius: none;
+  border: 0.3px solid #000000;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 100;
+  font-size: 1.4vw;
+  margin-top: 3vh;
+}
+.about_map{
+
+}
+.about_map iframe{
+  width: 50vw;
+  height: 32vh;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0;
+  right: 0;
+  margin: 0 !important;
+}
