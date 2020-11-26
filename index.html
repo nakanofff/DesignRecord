@@ -5,29 +5,38 @@
     <title>DesignRecord</title>
     <meta name="description" content="DesignRecordのコンタクトページです。お問い合わせやチームウェアの作成依頼等はこちらへお願いいたします。">
     <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="first_anime.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="index.css">
     <meta name="viewport" content="width=device-width">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link href="slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="slick.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="slick.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
-
+    <script type="text/javascript" src="main_slide.js"></script>
   </head>
   <body>
     <header>
-      <h1><img src="" alt="デザインレコード DesignRecord"></h1>
-
+      <h1 id="DR_logo"><a href="index.heml"><img src="DesignRecordLogo.png" alt="デザインレコード DesignRecord"></a></h1>
+      <div id="menu_button">
+      <p>menu</p>
+      </div>
+      <button type="button" name="header_buy_button" class="header_buy_button">ウェアの購入はこちらから</button>
     </header>
 
     <section id="menu">
       <div id="menu_wrap">
         <nav>
           <ul class="page_wrap">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">PRODUCTS</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="product.html">PRODUCTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
             <li class="port"><a href="#">DESIGNER's PORTFOLIO!!</a></li>
           </ul>
           <ul class="sns_wrap">
@@ -44,8 +53,27 @@
     </section>
 
     <main>
+      <ul class="slider main_slide_left">
+        <li><img src="home_img_left.jpg" alt="デザインレコードジャージ"></li>
+        <li><img src="main_img_left2.jpg" alt="デザインレコードジャージ"></li>
+      </ul>
+      <ul class="slider2 main_slide_right"　dir="rtl">
+        <li><img src="home_img_right.jpg" alt="デザインレコードジャージ"></li>
+        <li><img src="main_img_right2.jpg" alt="デザインレコードジャージ"></li>
+      </ul>
 
+      <div class="index_title">
+          <h1>Record the background of our design.</h1>
+      </div>
     </main>
+
+    <section id="first_animetion">
+      <img src="DesignRecordLogo2.png" alt="DesignRecord logo">
+    </section>
+    <section id="first_animetion2">
+      <p data-text="Record the background of our design.">Record the background of our design.</p>
+    </section>
+
 
   </body>
 </html>

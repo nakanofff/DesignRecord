@@ -13,12 +13,17 @@
     <link rel="stylesheet" href="jquery.multiscroll.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="slick.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="jquery.easings.min.js"></script>
     <script src="jquery.multiscroll.js"></script>
     <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="slick.min.js"></script>
+    <script type="text/javascript" src="main_slide.js"></script>
     <script type="text/javascript">
     $(function(){
         $('#multiscroll').multiscroll();
@@ -29,7 +34,7 @@
   <body>
 
     <header>
-      <h1 id="DR_logo"><a href="index.heml"><img src="DesignRecordLogo.png" alt="デザインレコード DesignRecord"></a></h1>
+      <h1 id="DR_logo"><a href="index.html"><img src="DesignRecordLogo.png" alt="デザインレコード DesignRecord"></a></h1>
       <div id="menu_button">
       <p>menu</p>
       </div>
@@ -40,10 +45,10 @@
       <div id="menu_wrap">
         <nav>
           <ul class="page_wrap">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">PRODUCTS</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="product.html">PRODUCTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
             <li class="port"><a href="#">DESIGNER's PORTFOLIO!!</a></li>
           </ul>
           <ul class="sns_wrap">
@@ -61,36 +66,39 @@
 
     <main id="multiscroll">
       <div class="ms-left">
+        <ul class="slider3 ms-section ms-left-section">
+          <li><img src="sunset_1.jpg" alt="デザインレコード Sunset Background"></li>
+          <li><img src="sunset_4.jpg" alt="デザインレコード Sunset Background"></li>
+        </ul>
         <div class="ms-section ms-left-section">
-          <img src="DSC07956.JPG" alt="デザインレコード Sunset Background">
-        </div>
-        <div class="ms-section ms-left-section">
-          <img src="DSC07985.JPG" alt="デザインレコード Starry Sky Backgeound">
+          <img src="starry_1.jpg" alt="デザインレコード Starry Sky Backgeound">
+
         </div>
       </div>
       <div class="ms-right">
         <div class="ms-section ms-right-section">
           <div class="products_title">
-            <h3>SUNSET BACKGROUND</h3>
-            <p>¥11000</p>
+            <h3>SUNSET <br class="br_sm"/>BACKGROUND</h3>
+            <p>¥11000+tax</p>
           </div>
           <div class="products_design">
             <h4>デザイン</h4>
-            <p>深いブルーからピンクへとフェードしていくグラデーションを使用し<br class="pc_br">
-              夕日が沈み夜が始まろうとする空をイメージしました。<br class="pc_br">
-              仕事や学校終わりの夕方ライドで着用してほしい１着です。</p>
+            <p>深いブルーからピンクへと <br class="br_sm"/>フェードしていくグラデー <br class="br_sm"/>ションを使用し
+              <br class="pc_br"/>
+              夕日が沈み <br class="br_sm"/>夜が始まろうとする空をイ <br class="br_sm"/>メージしました。<br>
+              仕事や学校終わりの夕方ライド<br class="br_sm"/>で着用してほしい１着です。</p>
           </div>
           <div class="products_material">
             <h4>素材</h4>
-            <p>道程部分には通気性の良いメッシュ素材を使用しつつ袖にはエアロス<br class="pc_br">
-              リーブを使用し速さと快適さを両立させました。</p>
+            <p>道程部分には通気性の良い<br class="br_sm"/>メッシュ素材を使用しつつ<br class="br_sm"/>袖にはエアロス<br class="pc_br">
+              リーブを使<br class="br_sm"/>用し速さと快適さを両立さ<br class="br_sm"/>せました。</p>
           </div>
           <button type="button" name="buy_button" class="buy_button">購入画面へ</button>
         </div>
         <div class="ms-section ms-right-section">
           <div class="products_title">
-            <h3>STARRY SKY BACKGROUND</h3>
-            <p>11000</p>
+            <h3>STARRY SKY <br class="br_sm">BACKGROUND</h3>
+            <p>¥11000+tax</p>
           </div>
           <div class="products_design">
             <h4>デザイン</h4>
@@ -109,12 +117,10 @@
       </div>
     </main>
 
-    <section id="first_animetion">
-      <img src="DesignRecordLogo2.png" alt="DesignRecord logo">
+    <section id="first_animetion0">
+      <p data-text="PRODUCTS.">PRODUCTS.</p>
     </section>
-    <section id="first_animetion2">
-      <p data-text="Record the background of our design.">Record the background of our design.</p>
-    </section>
+
 
   </body>
 </html>

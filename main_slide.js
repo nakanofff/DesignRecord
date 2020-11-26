@@ -1,0 +1,15 @@
+$(function(){
+  $('.slider').slick({
+    autoplay:true,
+    autoplaySpeed:3000,
+  });
+  $('.slider2').slick({
+    autoplay:true,
+    autoplaySpeed:3000,
+    rtl:true
+  });
+  $('.slider3').slick({
+    autoplay:true,
+    autoplaySpeed:1000,
+  });
+});

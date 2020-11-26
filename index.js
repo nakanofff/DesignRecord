@@ -1,4 +1,8 @@
 $(function(){
+  $('#first_animetion0').delay(3000).queue(function(){
+    $(this).addClass('animetion_hidden');
+    $(this).css('display','none').delay(1000);
+  });
   $('#first_animetion').delay(3000).queue(function(){
     $(this).addClass('animetion_hidden');
     $(this).css('display','none').delay(1000);

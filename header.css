@@ -33,15 +33,44 @@ header{
   top: 0;
   width: 25vw;
   border: 0.3px solid #000000;
-  color: #000000;
+  color: #ffffff;
   font-size: 1.5w;
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: 100;
-  background-color: #ffffff;
+  background-color: #000000;
   padding: 8px;
   transition: 1s;
 }
 .header_buy_button:hover{
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
+}
+@media screen and (max-width: 420px){
+  #DR_logo img{
+    width: 30vw;
+    height: auto;
+    object-fit: cover;
+  }
+  #menu_button p{
+    color: #000000;
+    font-size: 4vw;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    transform: rotate(90deg);
+    margin: 0;
+  }
+  .header_buy_button{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 50vw;
+    border: 0.3px solid #000000;
+    color: #ffffff;
+    font-size: 1.5w;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 100;
+    background-color: #000000;
+    padding: 8px;
+    transition: 1s;
+  }
 }
